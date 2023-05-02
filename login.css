@@ -1,6 +1,8 @@
 * {
     margin: 0;
     padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -8,7 +10,6 @@ body {
     background: #fcfcfc;
     font-family: sans-serif;
 }
-
 .sayfa-ici {
     padding: 5rem;
     padding-bottom: 1rem;
@@ -20,32 +21,6 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: medium;
 
-}
-
-@media screen and (min-width:768px) {
-    .img {
-        height: 486px;
-        width: 864px;
-        display: block;
-        margin: auto;
-
-    }
-}
-
-@media screen and (max-width:768px) {
-    .img {
-
-        height: 216px;
-        width: 400px;
-
-
-
-    }
-}
-
-.forms {
-    display: flexbox;
-    margin-top: 1rem;
 }
 
 footer {
