@@ -59,7 +59,19 @@
     <!-- Page Content -->
     <section class="py-5">
         <div class="sayfa-ici">
+            <?php
+            if (isset($_POST['gonder'])) {
+                $parola = trim($_POST['mail'], "@sakarya.edu.tr");
+                if ($_POST['pin'] == $parola) {
+                    echo "Şifre girişi doğru. Hoşgeldiniz $parola ";
+                    header("Refresh:5; url=/index.html");
 
+                } else {
+                    echo "Şifre girişi başarısız.";
+                    header("Refresh:5; url=/login.html");
+                }
+            }
+            ?>
         </div>
     </section>
 
