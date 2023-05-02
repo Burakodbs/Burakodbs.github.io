@@ -9,7 +9,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="login.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
@@ -61,8 +61,10 @@
         <div class="sayfa-ici">
             <?php
             if (isset($_POST['gonder'])) {
-                $parola = trim($_POST['mail'], "@sakarya.edu.tr");
-                if ($_POST['pin'] == $parola) {
+                $girismail=$_POST['mail'];
+                $girispin=$_POST['pin'];
+                $parola = trim($girismail, "@sakarya.edu.tr");
+                if ($girispin == $parola) {
                     echo "Şifre girişi doğru. Hoşgeldiniz $parola ";
                     header("Refresh:5; url=/index.html");
 
