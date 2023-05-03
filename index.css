@@ -12,7 +12,7 @@ body {
 }
 
 .sayfa-ici {
-    padding: 5rem;
+    padding: 4rem;
     padding-bottom: 1rem;
     text-align: center;
 }
@@ -24,42 +24,18 @@ body {
 
 }
 
-@media screen and (min-width:768px) {
-    .img {
-        height: 486px;
-        width: 864px;
-        display: block;
-        margin: auto;
-
-    }
-}
-
-@media screen and (max-width:768px) {
-    .img {
-
-        height: 216px;
-        width: 400px;
-
-
-
-    }
-}
-
 footer {
     position: absolute;
-    bottom: 0;
     left: 0;
     right: 0;
     background: #111;
     height: auto;
-    width: 100vw;
-
+    width: auto;
     padding-top: 10px;
     color: #fff;
 }
 
 .footer-content {
-    display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -97,7 +73,6 @@ footer {
     font-size: 1.2rem;
     width: 20px;
     transition: ease;
-
 }
 
 .socials a:hover i {
@@ -107,8 +82,9 @@ footer {
 .footer-bottom {
     background: #000;
     width: 100vw;
-    padding: 0.5rem;
+    padding-top: 10px;
     padding-bottom: 40px;
+    
     text-align: center;
 }
 
@@ -125,17 +101,16 @@ footer {
     text-decoration: none;
 }
 
-.footer-bottom span {
-    text-transform: uppercase;
-    opacity: .4;
-    font-weight: 200;
+img {
+    width: 100%;
+    height: auto;
 }
 
-@media (max-width:500px) {
-    .footer-menu ul {
-        display: flex;
-        margin-top: 10px;
-        margin-bottom: 20px;
-    }
+video {
+    width: 100%;
+    height: auto;
 }
 
+.parca{
+    margin-top:1rem;
+}
