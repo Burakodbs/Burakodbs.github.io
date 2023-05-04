@@ -5,25 +5,10 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
-
 body {
     background: #fcfcfc;
     font-family: sans-serif;
 }
-
-.sayfa-ici {
-    padding: 4rem;
-    padding-bottom: 1rem;
-    text-align: center;
-}
-
-.sayfa-ici p {
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: medium;
-
-}
-
 footer {
     position: absolute;
     left: 0;
@@ -34,34 +19,29 @@ footer {
     padding-top: 10px;
     color: #fff;
 }
-
 .footer-content {
-    display: flex;
+
     align-items: center;
     justify-content: center;
     flex-direction: column;
     text-align: center;
 }
-
 .footer-content h3 {
     font-size: 2.1rem;
     font-weight: 500;
     text-transform: capitalize;
     line-height: 3rem;
 }
-
 .socials {
     list-style: none;
+    padding: 0px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 1rem 0 1rem 0;
 }
-
 .socials li {
-    margin: 0 10px;
+    margin: 1%;
 }
-
 .socials a {
     text-decoration: none;
     color: #fff;
@@ -69,35 +49,44 @@ footer {
     padding: 5px;
     border-radius: 50%;
 }
-
 .socials a i {
     font-size: 1.2rem;
     width: 20px;
     transition: ease;
 }
-
 .socials a:hover i {
     color: aqua;
 }
-
 .footer-bottom {
     background: #000;
     width: 100vw;
     padding-top: 10px;
     padding-bottom: 40px;
-    
+
     text-align: center;
 }
-
 .footer-bottom p {
     float: left;
     font-size: 14px;
     word-spacing: 2px;
     text-transform: capitalize;
 }
-
 .footer-bottom p a {
     color: #44bae8;
     font-size: 16px;
     text-decoration: none;
+}
+
+.sayfa-ici {
+    padding: 2rem;
+    text-align: center;
+}
+
+.sayfa-ici p {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    margin-top: 6rem;
+    ;
+
 }
