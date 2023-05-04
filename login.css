@@ -1,98 +1,61 @@
-* {
-    margin: 0;
-    padding: 0;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-body {
-    background: #fcfcfc;
-    font-family: sans-serif;
-}
-footer {
-    position: absolute;
-    left: 0;
-    right: 0;
-    background: #111;
-    height: auto;
-    width: auto;
-    padding-top: 10px;
-    color: #fff;
-}
-.footer-content {
-
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-}
-.footer-content h3 {
-    font-size: 2.1rem;
-    font-weight: 500;
-    text-transform: capitalize;
-    line-height: 3rem;
-}
-.socials {
-    list-style: none;
-    padding: 0px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.socials li {
-    margin: 1%;
-}
-.socials a {
-    text-decoration: none;
-    color: #fff;
-    border: 1.1px solid white;
-    padding: 5px;
-    border-radius: 50%;
-}
-.socials a i {
-    font-size: 1.2rem;
-    width: 20px;
-    transition: ease;
-}
-.socials a:hover i {
-    color: aqua;
-}
-.footer-bottom {
-    background: #000;
-    width: 100vw;
-    padding-top: 10px;
-    padding-bottom: 40px;
-
-    text-align: center;
-}
-.footer-bottom p {
-    float: left;
-    font-size: 14px;
-    word-spacing: 2px;
-    text-transform: capitalize;
-}
-.footer-bottom p a {
-    color: #44bae8;
-    font-size: 16px;
-    text-decoration: none;
-}
-.sayfa-ici {
-
-    margin-top: 15rem;
-    margin-bottom: 11rem;
+.container {
+    max-width: 500px;
     width: 100%;
-    display: grid; 
-    place-content: center;
+    margin: 10rem;
+    position: relative;
 }
-input {
-    color: #000000;
-    border: 20;
-    text-align: center;
-    padding: 5px;
-    width: 100%;
+
+#login {
+    
+    padding: 25px;
+    margin: 100px 0;
+    
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+#login h2 {
     display: block;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 300;
+    margin-bottom: 15px;
 }
 
-form {
-    width: 300px;
+.form-control {
+    border: none !important;
+    margin: 0 0 10px;
+    min-width: 100%;
+    width: 100%;
+    
 }
+
+#login input[type="email"],
+#login input[type="password"]{
+    width: 100%;
+    padding: 10px;
+}
+
+
+#submit{
+    cursor: pointer;
+    width: 50%;
+    height: 48px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border: none;
+    background: #79A7A8;
+    color: #FFF;
+    
+}
+
+#login button[type="submit"]:hover {
+    background: #355C7D;
+    transition: background-color 0.9s ease-in-out;
+}
+
+#login button[type="submit"]:active {
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
