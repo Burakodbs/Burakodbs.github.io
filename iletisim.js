@@ -13,5 +13,8 @@ function validateForm() {
   var email = document.forms["contact"]["email"].value;
   var konu = document.forms["contact"]["konu"].value;
   var mesaj = document.forms["contact"]["mesaj"].value;
-  
+  if (adsoyad == "") {
+    alert("Ad soyad boş bırakılamaz.");
+    return false;
+  };
 }

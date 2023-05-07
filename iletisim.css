@@ -10,14 +10,13 @@
     
     padding: 25px;
     margin: 100px 0;
-    
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
 
 #contact h2 {
     display: block;
     text-align: center;
-    font-size: 30px;
+    font-size: 1.5rem;
     font-weight: 300;
     margin-bottom: 15px;
 }
@@ -33,7 +32,6 @@
 #contact input[type="text"],
 #contact input[type="email"],
 #contact input[type="tel"],
-#contact input[type=""],
 #contact textarea {
     width: 100%;
     padding: 10px;

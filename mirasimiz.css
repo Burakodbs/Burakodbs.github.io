@@ -1,0 +1,35 @@
+
+.paragraph h3{
+    color: #355C7D;
+    font-size: 50px;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+.paragraph a{
+    text-decoration: none;
+}
+.paragraph h3:hover{
+    color: darkgreen;
+}
+.sayfa-ici{
+    margin: 2rem 4rem;
+}
+.sayfa-ici p{
+    margin-top:2rem;
+    margin-bottom:2rem;
+    font-weight: 100;
+    font-size: 1.5rem;
+    background-color: #c2d1dd;
+    
+}
+img {
+    width: 70%;
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+}
+figcaption{
+    text-align: center;
+}
