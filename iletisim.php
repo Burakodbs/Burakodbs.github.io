@@ -4,26 +4,30 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="apple-touch-icon" sizes="180x180" href="/resim/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/resim/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/resim/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Burak Odabaş | İletişim</title>
     <style>
         html {
-            background-color: #355C7D;
+            background: rgb(31, 235, 147);
+            background: linear-gradient(90deg, rgba(31, 235, 147, 1) 30%, rgba(47, 129, 145, 1) 70%);
+
         }
 
         .orta {
-            width: 800px;
-            height: 600px;
-            padding: 20px;
-            background-color: #79A7A8;
+            width: 40%;
+            height: 500px;
             position: absolute;
             top: 50%;
             left: 50%;
-            margin-left: -400px;
-            margin-top: -300px;
+            transform: translate(-50%, -50%);
             text-align: center;
             font-size: 2rem;
             border-radius: 20px;
+            padding: 4rem;
         }
     </style>
 </head>
