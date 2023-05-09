@@ -12,14 +12,14 @@
     <title>Burak Odabaş | İletişim</title>
     <style>
         html {
-            background: rgb(31, 235, 147);
-            background: linear-gradient(90deg, rgba(31, 235, 147, 1) 30%, rgba(47, 129, 145, 1) 70%);
+            background: rgb(121, 167, 168);
+            background: linear-gradient(90deg, rgba(121, 167, 168, 1) 30%, rgba(53, 92, 125, 1) 70%);
 
         }
 
         .orta {
             width: 40%;
-            height: 500px;
+            height: auto;
             position: absolute;
             top: 50%;
             left: 50%;

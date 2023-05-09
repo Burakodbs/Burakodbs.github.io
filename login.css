@@ -29,14 +29,14 @@
     
 }
 
-#login input[type="email"],
+#login input[type="text"],
 #login input[type="password"]{
     width: 100%;
     padding: 10px;
 }
 
 
-#submit{
+#gonder{
     cursor: pointer;
     width: 50%;
     height: 48px;

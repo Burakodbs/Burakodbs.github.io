@@ -4,25 +4,30 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="apple-touch-icon" sizes="180x180" href="/resim/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/resim/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/resim/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Burak Odabaş | Giriş Yap</title>
     <style>
         html {
-            background-color: #79A7A8;
-            font-size: 5rem;
-            text-align: center;
+            background: rgb(121, 167, 168);
+            background: linear-gradient(90deg, rgba(121, 167, 168, 1) 30%, rgba(53, 92, 125, 1) 70%);
+
         }
 
         .orta {
-            width: 1200px;
-            font size: 5rem;
-            height: 300px;
-            background-color: #79A7A8;
+            width: 40%;
+            height: 500px;
             position: absolute;
-            left: 50%;
             top: 50%;
-            margin-left: -600px;
-            margin-top: -150px;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            font-size: 2rem;
+            border-radius: 20px;
+            padding: 4rem;
         }
     </style>
 </head>
@@ -31,11 +36,11 @@
     <div class="orta">
         <?php
         if (isset($_POST['gonder'])) {
-            $girismail = $_POST['mail'];
+            $girismail = $_POST['email'];
             $girispin = $_POST['pin'];
             $parola = trim($girismail, "@ogr.sakarya.edu.tr");
             if ($girispin == $parola) {
-                header(" url=/index.html");
+                header("Refresh:5; url=/index.html");
                 echo "ŞİFRE GİRİŞİ DOĞRU. <br> HOŞGELDİNİZ $parola. <br>";
                 echo "ANASAYFAYA YÖNLENDİRİYORSUNUZ... ";
             } else {

@@ -19,6 +19,16 @@
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Burak Odabaş | Giriş Yap</title>
+    <script>
+        function formKontrol() {
+            var email = document.forms["login"]["email"].value;
+            var emailFormat = /\S+@ogr.sakarya.edu.tr+/;
+            if (!emailFormat.test(email)) {
+                    alert("Sadece ogr.sakarya.edu.tr alan adına sahip mailler kabul edilir.");
+                    return false;
+                }
+        }
+    </script>
 </head>
 
 <body>
@@ -39,16 +49,16 @@
     <!-- Page Content -->
     <section class="py-5">
         <div class="container">
-            <form id="login" name="login" action="login.php" method="post">
+            <form id="login" name="login" action="login.php" onsubmit="return formKontrol()" method="post">
                 <h2>Giriş Sayfası</h2>
                 <div class="form-control">
-                    <input placeholder="E-Posta Adresiniz" type="email" name="mail" required autofocus> <br>
+                    <input placeholder="E-Posta Adresiniz" type="text" name="email" id="email" required autofocus> <br>
                 </div>
                 <div class="form-control">
                     <input placeholder="Şifreniz" type="password" name="pin" required> <br>
                 </div>
                 <div class="form-control">
-                    <input type="submit" name="gonder" value="Giriş" id="submit">
+                    <input type="submit" name="gonder" value="Giriş" id="gonder">
                 </div>
             </form>
         </div>
