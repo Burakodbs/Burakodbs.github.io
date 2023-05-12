@@ -1,0 +1,16 @@
+.sayfa {
+    display: flex;
+    justify-content: center;
+    margin: 5%;
+    flex-direction: column;
+    padding: 5%;
+    
+}
+#ara{
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 1%;
+    background-color: #79A7A8;
+    color: white;
+    border: 0;
+}
