@@ -15,24 +15,6 @@
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Burak Odabaş | İlgi Alanlarım</title>
-    <script>
-        function bul() {
-            var kitap = document.getElementById("kitapadi").value;
-            var data = null;
-            var xhr = new XMLHttpRequest();
-            xhr.withCredentials = true;
-
-            xhr.addEventListener("readystatechange", function () { if (this.readyState === this.DONE) { console.log(this.responseText); } });
-
-            xhr.open("GET", "https://api.collectapi.com/book/newBook");
-            xhr.setRequestHeader("content-type", "application/json");
-            xhr.setRequestHeader("authorization", "apikey 2orWTDtn7T1nP8iCxowds4:3AtDLymWEy8P1r5WTQIeZJ");
-
-            xhr.send(data);
-
-
-        }
-    </script>
 </head>
 
 <body>
@@ -51,22 +33,17 @@
     </header>
 
     <!-- Page Content -->
-    <section class="py-5">
-        <div class="sayfa">
-
-            <label for="kitapadi" style="text-align: center">Lütfen hakkında bilgi almak istediğiniz kitabı
-                yazınız.</label>
-            <input type="text" style="text-align: center" id="kitapadi" name="kitapadi">
-            <button id="ara" name="ara" onclick="bul()">ARA</button>
-
-            <p id="url"></p>
-            <p id="fiyat"></p>
-            <p id="title"></p>
-            <img id="image">
-
-
+    <section class="container">
+        <div class="details-container">
+            <div class="details-input">
+                <p> Girdiğiniz tarihteki Günün Astronomik Fotoğrafını göreceksiniz.//yıl-ay-gün//</p>
+                <input type="text" style="text-align: center">
+            </div>
+            <button type="button" id="fetch-image"> ARA </button>
         </div>
+        <div class="image-container"></div>
     </section>
+
 
     <!--Footer-->
     <footer>
@@ -82,6 +59,7 @@
             <p>copyright © <a href="#">BurakOdabas</a> </p>
         </div>
     </footer>
+    <script src="api.js"></script>
 </body>
 
 </html>

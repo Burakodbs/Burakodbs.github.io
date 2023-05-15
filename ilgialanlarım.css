@@ -1,16 +1,30 @@
-.sayfa {
-    display: flex;
-    justify-content: center;
-    margin: 5%;
-    flex-direction: column;
-    padding: 5%;
+.container {
+    
+    margin-bottom: 28rem;
+    margin-top: 2rem;
+    
     
 }
-#ara{
-    padding-left: 5%;
-    padding-right: 5%;
-    margin-top: 1%;
+.details-container{
+    width: 100%;
+    text-align: center;
+}
+#fetch-image{
+    margin-top: 10px;
     background-color: #79A7A8;
     color: white;
     border: 0;
+    width: 100%;
+    margin-bottom:2rem;
+}
+.details-input input{
+    width: 100%;
+}
+.image-container{
+    width: 100%;
+    
+}
+img{
+    width: 100%;
+    height:830px;
 }
