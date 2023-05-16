@@ -1,7 +1,6 @@
 .sayfa-ici {
   margin: 2rem 2rem;
 }
-
 .sayfa-ici p {
   text-align: center;
 
@@ -29,7 +28,6 @@ img {
     margin-right: auto;
   
 }
-
 .slideshow-container {
   max-width: 1000px;
   position: relative;
@@ -49,18 +47,14 @@ img {
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
 }
-
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
-
-
 .prev:hover,
 .next:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
-
 .text {
   color: #f2f2f2;
   background-color: #717171;
@@ -71,8 +65,6 @@ img {
   width: 100%;
   text-align: center;
 }
-
-
 .numbertext {
   color: #f2f2f2;
   background-color: #717171;
@@ -91,7 +83,6 @@ img {
   display: inline-block;
   transition: background-color 0.6s ease;
 }
-
 .active,
 .dot:hover {
   background-color: #717171;

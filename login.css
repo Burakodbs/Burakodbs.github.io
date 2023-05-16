@@ -6,10 +6,8 @@
 }
 
 #login {
-    
     padding: 25px;
     margin: 100px 0;
-    
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
 
@@ -26,17 +24,15 @@
     margin: 0 0 10px;
     min-width: 100%;
     width: 100%;
-    
 }
 
 #login input[type="text"],
-#login input[type="password"]{
+#login input[type="password"] {
     width: 100%;
     padding: 10px;
 }
 
-
-#gonder{
+#gonder {
     cursor: pointer;
     width: 50%;
     height: 48px;
@@ -47,7 +43,6 @@
     border: none;
     background: #79A7A8;
     color: #FFF;
-    
 }
 
 #login button[type="submit"]:hover {
@@ -58,4 +53,3 @@
 #login button[type="submit"]:active {
     box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
 }
-

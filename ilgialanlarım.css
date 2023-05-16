@@ -1,9 +1,6 @@
 .container {
-    
-    margin-bottom: 28rem;
+    margin-bottom: 40rem;
     margin-top: 2rem;
-    
-    
 }
 .details-container{
     width: 100%;
@@ -22,9 +19,12 @@
 }
 .image-container{
     width: 100%;
-    
 }
 img{
     width: 100%;
     height:830px;
+}
+#fetch-image:hover {
+    background: #355C7D;
+    transition: background-color 0.9s ease-in-out;
 }
