@@ -2,28 +2,37 @@
     margin-bottom: 40rem;
     margin-top: 2rem;
 }
-.details-container{
+.container input[type="text"] {
+    text-align: center;
+}
+
+.details-container {
     width: 100%;
     text-align: center;
 }
-#fetch-image{
+
+#fetch-image {
     margin-top: 10px;
     background-color: #79A7A8;
     color: white;
     border: 0;
     width: 100%;
-    margin-bottom:2rem;
+    margin-bottom: 2rem;
 }
-.details-input input{
+
+.details-input input {
     width: 100%;
 }
-.image-container{
+
+.image-container {
     width: 100%;
 }
-img{
+
+.image-container img {
     width: 100%;
-    height:830px;
+    height: 830px;
 }
+
 #fetch-image:hover {
     background: #355C7D;
     transition: background-color 0.9s ease-in-out;

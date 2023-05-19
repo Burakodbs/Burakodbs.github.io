@@ -14,7 +14,7 @@ function formKontrol() {
     var email = document.forms["contact"]["email"].value;
     var konu = document.forms["contact"]["konu"].value;
     var mesaj = document.forms["contact"]["mesaj"].value;
-    var emailFormat = /\S+@ogr.sakarya.edu.tr+/;
+    var emailFormat = /\S+@+\S+/;
     var telefonFormat = /[0-9]/;
 
     var genelKontrol = cinsiyet == "" || adsoyad == "" || dg == "" || renk == "" || dosya == "" || sehir == "" || uni == "" || (amac1 == false && amac2 == false && amac3 == false) || email == "" || konu == "" || mesaj == "";
@@ -23,7 +23,7 @@ function formKontrol() {
         return false;
     } else {
         if (!emailFormat.test(email)) {
-            alert("Sadece ogr.sakarya.edu.tr alan adına sahip mailler kabul edilir.");
+            alert("Lütfen e postanızı doğru formatta giriniz.");
             return false;
         }
         else if(!telefonFormat.test(tel) || (telefonFormat.test(tel) && tel.length != 10)) {
