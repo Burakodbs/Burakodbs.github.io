@@ -1,7 +1,7 @@
 function formKontrol() {
     var email = document.forms["login"]["email"].value;
     var pin = document.getElementById('pin');
-    var emailFormat = /\S+@ogr.sakarya.edu.tr+/;
+    var emailFormat = /\S+@ogr.sakarya.edu.tr/;
     if (email == "") {
         alert("E posta boş geçilemez.");
         return false;
