@@ -1,12 +1,15 @@
 .sayfa-ici figcaption {
     text-align: center;
 }
-.sayfa-ici figcaption a{
+
+.sayfa-ici figcaption a {
     text-decoration: none;
 }
-.parca-p{
+
+.parca-p {
     margin: 0px 2rem;
 }
+
 .sayfa-ici p {
     text-align: center;
     font-size: 1.5rem;
@@ -15,13 +18,21 @@
 }
 
 img {
+    height: 100%;
     width: 100%;
-    height: auto;
+    max-width: 1000px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 video {
+    height: 100%;
     width: 100%;
-    height: auto;
+    max-width: 1000px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .parca {

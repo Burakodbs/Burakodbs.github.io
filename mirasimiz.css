@@ -1,33 +1,39 @@
-.paragraph h3{
+.paragraph h3 {
     color: #355C7D;
     font-size: 50px;
     margin-bottom: 3rem;
     text-align: center;
 }
-.paragraph a{
+
+.paragraph a {
     text-decoration: none;
 }
-.paragraph h3:hover{
+
+.paragraph h3:hover {
     color: darkgreen;
 }
-.sayfa-ici{
-    margin: 2rem 4rem;
+
+.sayfa-ici {
+    margin: 2rem 2rem;
 }
-.sayfa-ici p{
-    margin-top:2rem;
-    margin-bottom:2rem;
+
+.sayfa-ici p {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     font-weight: 450;
     font-size: 1.5rem;
     background-color: #c2d1dd;
 }
+
 img {
-    width: 70%;
+    height: 100%;
+    width: 100%;
+    max-width: 1000px;
     display: block;
-    position: relative;
     margin-left: auto;
     margin-right: auto;
-    height: auto;
 }
-figcaption{
+
+figcaption {
     text-align: center;
 }

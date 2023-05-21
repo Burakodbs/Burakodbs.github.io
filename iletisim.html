@@ -33,90 +33,88 @@
     </header>
 
     <!-- Page Content -->
-    <section class="py-5">
-        <div class="sayfa-ici">
-            <div class="container">
-                <form id="contact" name="contact" action="/iletisim.php" onsubmit="return formKontrol()" method="post">
-                    <h2>İletişim Sayfası</h2>
-                    <div class="form-control">
-                        <input placeholder="Adınız Soyadınız" type="text" id="adsoyad" name="adsoyad" autofocus>
-                    </div>
-                    <div class="form-control">
-                        <p><strong>Cinsiyetiniz nedir?</strong></p>
-                        <input type="radio" id="erkek" name="cinsiyet" value="Erkek">
-                        <label for="erkek">Erkek</label><br>
-                        <input type="radio" id="kadın" name="cinsiyet" value="Kadın">
-                        <label for="kadın">Kadın</label><br>
-                    </div>
-                    <div class="form-control">
-                        <label for="dg">Doğum tarihinizi giriniz:</label>
-                        <input type="date" name="dg" id="dg">
-                    </div>
-                    <div class="form-control">
-                        <label for="renk">En sevdiğiniz renk:</label>
-                        <input type="color" name="renk" id="renk">
-                    </div>
-                    <div class="form-control">
-                        <label for="dosya">Bir adet vesikalık yükleyiniz: </label>
-                        <input type="file" id="dosya" name="dosya">
-                    </div>
-                    <div class="form-control">
-                        <label for="sehir">Hangi şehirde yaşıyorsunuz?</label>
-                        <select name="sehir" id="sehir">
-                            <option value="istanbul">İstanbul</option>
-                            <option value="ankara">Ankara</option>
-                            <option value="izmir">İzmir</option>
-                            <option value="sakarya">Sakarya</option>
-                            <option value="diger">Diğer</option>
-                        </select>
-                    </div>
-                    <div class="form-control">
-                        <label for="list">Hangi üniversitede okuyorsunuz:</label>
-                        <input placeholder="     --------- Üniversitesi" type="list" id="uni" name="uni"
-                            list="universiteler">
-                        <datalist id="universiteler">
-                            <option value="SAU">
-                                Sakarya Üniversitesi
-                            </option>
-                            <option value="SUBU">
-                                Sakarya Uyg. Bil. Üniversitesi
-                            </option>
-                            <option value="KOU">
-                                Kocaeli Üniversitesi
-                            </option>
-                            <option value="ITU">
-                                İstanbul Teknik Üniversitesi
-                            </option>
-                        </datalist>
-                    </div>
-                    <div class="form-control">
-                        <p><strong>Konu nedir?</strong></p>
-                        <input type="checkbox" id="amac1" name="amac1" value="is">
-                        <label for="amac1"> İş teklifi</label><br>
-                        <input type="checkbox" id="amac2" name="amac2" value="reklam">
-                        <label for="amac2">Reklam teklifi</label><br>
-                        <input type="checkbox" id="amac3" name="amac3" value="danisma">
-                        <label for="amac3"> Danışma hizmeti</label><br>
-                    </div>
-                    <div class="form-control">
-                        <input type="text" id="tel" name="tel"
-                            placeholder="Telefon numarası --- Başında 0 (sıfır) olmadan --- ">
-                    </div>
-                    <div class="form-control">
-                        <input placeholder="E-Posta Adresiniz" type="text" name="email" id="email">
-                    </div>
-                    <div class="form-control">
-                        <input placeholder="Konu" type="text" name="konu" id="konu">
-                    </div>
-                    <div class="form-control">
-                        <textarea placeholder="Lütfen Mesajınızı Buraya Yazın.." name="mesaj" id="mesaj"></textarea>
-                    </div>
-                    <div>
-                        <button name="submit" type="submit" id="submit">GÖNDER</button>
-                        <button name="reset" type="reset" id="reset">SIFIRLA</button>
-                    </div>
-                </form>
-            </div>
+    <section>
+        <div class="container">
+            <form id="contact" name="contact" action="/iletisim.php" onsubmit="return formKontrol()" method="post">
+                <h2>İletişim Sayfası</h2>
+                <div class="form-control">
+                    <input placeholder="Adınız Soyadınız" type="text" id="adsoyad" name="adsoyad" autofocus>
+                </div>
+                <div class="form-control">
+                    <p><strong>Cinsiyetiniz nedir?</strong></p>
+                    <input type="radio" id="erkek" name="cinsiyet" value="Erkek">
+                    <label for="erkek">Erkek</label><br>
+                    <input type="radio" id="kadın" name="cinsiyet" value="Kadın">
+                    <label for="kadın">Kadın</label><br>
+                </div>
+                <div class="form-control">
+                    <label for="dg">Doğum tarihinizi giriniz:</label>
+                    <input type="date" name="dg" id="dg">
+                </div>
+                <div class="form-control">
+                    <label for="renk">En sevdiğiniz renk:</label>
+                    <input type="color" name="renk" id="renk">
+                </div>
+                <div class="form-control">
+                    <label for="dosya">Bir adet vesikalık yükleyiniz: </label>
+                    <input type="file" id="dosya" name="dosya">
+                </div>
+                <div class="form-control">
+                    <label for="sehir">Hangi şehirde yaşıyorsunuz?</label>
+                    <select name="sehir" id="sehir">
+                        <option value="istanbul">İstanbul</option>
+                        <option value="ankara">Ankara</option>
+                        <option value="izmir">İzmir</option>
+                        <option value="sakarya">Sakarya</option>
+                        <option value="diger">Diğer</option>
+                    </select>
+                </div>
+                <div class="form-control">
+                    <label for="list">Hangi üniversitede okuyorsunuz:</label>
+                    <input placeholder="     --------- Üniversitesi" type="list" id="uni" name="uni"
+                        list="universiteler">
+                    <datalist id="universiteler">
+                        <option value="SAU">
+                            Sakarya Üniversitesi
+                        </option>
+                        <option value="SUBU">
+                            Sakarya Uyg. Bil. Üniversitesi
+                        </option>
+                        <option value="KOU">
+                            Kocaeli Üniversitesi
+                        </option>
+                        <option value="ITU">
+                            İstanbul Teknik Üniversitesi
+                        </option>
+                    </datalist>
+                </div>
+                <div class="form-control">
+                    <p><strong>Konu nedir?</strong></p>
+                    <input type="checkbox" id="amac1" name="amac1" value="is">
+                    <label for="amac1"> İş teklifi</label><br>
+                    <input type="checkbox" id="amac2" name="amac2" value="reklam">
+                    <label for="amac2">Reklam teklifi</label><br>
+                    <input type="checkbox" id="amac3" name="amac3" value="danisma">
+                    <label for="amac3"> Danışma hizmeti</label><br>
+                </div>
+                <div class="form-control">
+                    <input type="text" id="tel" name="tel"
+                        placeholder="Telefon numarası --- Başında 0 (sıfır) olmadan --- ">
+                </div>
+                <div class="form-control">
+                    <input placeholder="E-Posta Adresiniz" type="text" name="email" id="email">
+                </div>
+                <div class="form-control">
+                    <input placeholder="Konu" type="text" name="konu" id="konu">
+                </div>
+                <div class="form-control">
+                    <textarea placeholder="Lütfen Mesajınızı Buraya Yazın.." name="mesaj" id="mesaj"></textarea>
+                </div>
+                <div>
+                    <button name="submit" type="submit" id="submit">GÖNDER</button>
+                    <button name="reset" type="reset" id="reset">SIFIRLA</button>
+                </div>
+            </form>
         </div>
     </section>
 
